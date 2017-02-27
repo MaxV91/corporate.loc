@@ -7,6 +7,7 @@ return [
     'read_more' => ' Читать далее',
     'articles_no' => 'Записей нет',
     'latest_comments' => 'Последние ответы',
+    'reply' => 'Ответ',
 ];
 
 ?>
