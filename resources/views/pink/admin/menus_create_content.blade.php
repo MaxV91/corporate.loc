@@ -142,12 +142,22 @@
 
 
 
-
-
-
-
         {!! Form::close() !!}
 
 
     </div>
 </div>
+
+<script>
+
+    jQuery(function ($) {
+
+        $('#accordion').accordion({
+            
+            activate: function (e, obj) {
+                obj.newPanel.prev().find('input[type=radio]').attr('checked', 'checked');
+            }
+        });
+    });
+
+</script>

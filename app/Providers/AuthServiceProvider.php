@@ -7,8 +7,10 @@ use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 use Corp\Article;
+use Corp\Menu;
 use Corp\Permission;
 use Corp\Policies\PermissionPolicy;
+use Corp\Policies\MenusPolicy;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -19,7 +21,8 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
         Article::class => ArticlePolicy::class,
-        Permission::class => PermissionPolicy::class
+        Permission::class => PermissionPolicy::class,
+        Menu::class => MenusPolicy::class,
     ];
 
     /**
